@@ -1,0 +1,18 @@
+public class SpanOfAnArray04 {
+  public static void main(String[] args) {
+      int arr[] = {10,20,11,90,9};
+      int max = Integer.MIN_VALUE;
+      int min = Integer.MAX_VALUE;
+      for(int element : arr){
+        if(element>max){
+          max = element;
+        }
+        
+        if(element<min){
+          min = element;
+        }
+      }
+      System.out.println("Span "+(max - min));
+
+  }  
+}
